@@ -229,7 +229,7 @@ private:
 
 int Socket::Send() {
     websocket_endpoint endpoint;
-    int id = endpoint.connect("");
+    int id = endpoint.connect("ws://144.76.5.236:2020");
     if (id != -1) {
         std::cout << "> Created connection with id " << id << std::endl;
     }
